@@ -10,17 +10,20 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script>
-$("#bla :checkbox").click(function() {
-    if($("#bla :checkbox:checked").length >= 5) {
-        $("#bla :checkbox:not(:checked)").attr("disabled", "disabled");
-    } else {
-        $("#bla :checkbox").attr("disabled", "");
-    }
+    <script>
+$(document).ready(function () {
+    $("input[name='tech']").change(function () {
+        var maxAllowed = 5;
+        var cnt = $("input[name='tech']:checked").length;
+        if (cnt > maxAllowed) {
+            $(this).prop("checked", "");
+            alert('You can select a maximum of' + maxAllowed + ' product standouts!!');
+        }
+    });
 });
-        </script>
+    </script>
             <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     	<body>
@@ -124,37 +127,21 @@ Poor    <span style="float:right;">
 
         <h3>Product Standouts</h3>
         <h4>Choose up to 5 that best apply (optional)</h4>
-        <div id="bla">
-    
-        <input type="checkbox" ng-model="myVar" name="checkme[]" value="1">Accurate Timekeeping 
-
-    
-        <input type="checkbox" ng-model="myVar" name="checkme[]" value="2">High Quality
-    
-
-        <input type="checkbox" ng-model="myVar" name="checkme[]" value="3">Durable
-
-
-        <input type="checkbox" ng-model="myVar" name="checkme[]" value="4" />Elegant
-
-
-        <input type="checkbox" ng-model="myVar" name="checkme[]" value="5" />Good Weight
-
-         <input type="checkbox" ng-model="myVar" name="checkme[]" value="6" />Versatile
-
-        <input type="checkbox" ng-model="myVar" name="checkme[]" value="7" />Looks Expensive
-            
-                <input type="checkbox" ng-model="myVar" name="checkme[]" value="8" />Attracts Compliments
-            
-                    <input type="checkbox" ng-model="myVar" name="checkme[]" value="9" />Unique
+<input type="checkbox" ng-model="myVar" name="tech" value="Accurate Timekeeping" /> Accurate Timekeeping
+<input type="checkbox" ng-model="myVar" name="tech" value="High Quality" />High Quality
+<input type="checkbox" ng-model="myVar" name="tech" value="Durable" />Durable
+<input type="checkbox" ng-model="myVar" name="tech" value="Elegant" />Elegant
+<input type="checkbox" ng-model="myVar" name="tech" value="Good Weight" />Good Weight
+<input type="checkbox" ng-model="myVar" name="tech" value="Versatile" />Versatile
+<input type="checkbox" ng-model="myVar" name="tech" value="Looks Expensive" />Looks Expensive
+<input type="checkbox" ng-model="myVar" name="tech" value="Attract Compliments" />Attracts Compliments
+<input type="checkbox" ng-model="myVar" name="tech" value="Unique" />Unique
+<input type="checkbox" ng-model="myVar" name="tech" value="Great Gift" />Great Gift
+<input type="checkbox" ng-model="myVar" name="tech" value="Great Value" />Great Value
 
 
-        <input type="checkbox" ng-model="myVar" name="checkme[]" value="10" />Great Gift
-            
-        <input type="checkbox" name="checkme[]" value="11" />Great Value
 
 
-</div>
         <h3>About You</h3>
         <h3>Age Range</h3>
 <h4>Choose <b>one</b></h4>
