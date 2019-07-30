@@ -1,0 +1,150 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    background: #ffffff;
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    overflow: hidden;
+}
+.title{
+    text-align: center;
+}
+body{
+    background: #f5f5f5;
+    margin: 0;
+}
+h1{
+    font-size: 20px;
+}
+h2{
+    font-size: 16px;
+}
+h3{
+    font-size: 14px;
+}
+h4{
+    font-size: 12px;
+}
+form{ background: #ffffff;     
+    margin-top: 80px;     
+    margin-left: 20%;     
+    margin-right: 20%; 
+    box-shadow:0 0 4px rgba(7,55,74,0.2);    
+    border-radius: 5px;     
+    padding: 16px; 
+    max-width: 736px;
+}
+form .submit{
+    width: 100%;
+    background: #90ee90;
+    padding: 24px;
+    border-radius: 5px;
+}
+
+.quality-rating {
+    direction: rtl;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.quality-rating input[type=radio] {
+    display: none;
+}
+
+.quality-rating label {
+    color: #bbb;
+    font-size: 20px;
+    margin: 8%;
+    cursor: hand;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.quality-rating label:hover,
+.quality-rating label:hover ~ label,
+.quality-rating input[type=radio]:checked ~ label {
+    color: #90ee90
+}
+
+.experience-rating {
+    direction: rtl;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.experience-rating input[type=radio] {
+    display: none;
+}
+
+.experience-rating label {
+    color: #bbb;
+    font-size: 20px;
+    margin: 8%;
+    cursor: hand;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.experience-rating label:hover,
+.experience-rating label:hover ~ label,
+.experience-rating input[type=radio]:checked ~ label {
+    color: #90ee90
+}
+
+.quality-rating {
+    direction: rtl;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.quality-rating input[type=radio] {
+    display: none;
+}
+
+.quality-rating label {
+    color: #bbb;
+    font-size: 20px;
+    margin: 8%;
+    cursor: hand;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.quality-rating label:hover,
+.quality-rating label:hover ~ label,
+.quality-rating input[type=radio]:checked ~ label {
+    color: #90ee90
+}
+
+.design-rating {
+    direction: rtl;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.design-rating input[type=radio] {
+    display: none;
+}
+
+.design-rating label {
+    color: #bbb;
+    font-size: 20px;
+    margin: 8%;
+    cursor: hand;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.design-rating label:hover,
+.design-rating label:hover ~ label,
+.design-rating input[type=radio]:checked ~ label {
+    color: #90ee90
+}
+
