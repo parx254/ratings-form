@@ -6,7 +6,6 @@
             <title>Ratings Angular Form</title>
 <meta name="KeyWords" content="Ratings Form">
 <meta name="author" content="Parker McClelland">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
@@ -19,7 +18,7 @@ $(document).ready(function () {
         var cnt = $("input[name='tech']:checked").length;
         if (cnt > maxAllowed) {
             $(this).prop("checked", "");
-            alert('You can select a maximum of' + maxAllowed + ' product standouts!!');
+            alert('You can select a maximum of ' + maxAllowed + ' product standouts!!');
         }
     });
 });
